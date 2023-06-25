@@ -1,13 +1,17 @@
 package org.matematicasfacil.creartema;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,9 +19,20 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ConstraintLayout constraint = findViewById(R.id.mainActivity);
 
-        Toast.makeText(this, "OnCreate Actividad 1", Toast.LENGTH_SHORT).show();
-        // Actividad creada.
+        Snackbar snackbar = Snackbar.make(constraint, "Bienvenido a Themes", Snackbar.LENGTH_LONG);
+        View snackbarView = snackbar.getView();//Obteniendo la vista.
+        TextView textView = snackbarView.findViewById(com.google.android.material.R.id.snackbar_text);//Obteniendo Texto.
+        textView.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);//Centrando texto.
+        snackbar.setAction("Ok", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Acción a realizar cuando se hace clic en la acción del SnackBar
+            }
+        });
+        snackbar.show();
+
 
         Button boton1 = findViewById(R.id.btn1);
         Button boton2 = findViewById(R.id.btn2);
@@ -32,6 +47,11 @@ public class MainActivity extends AppCompatActivity {
             recreate();
         });
     }
+
+    /*
+
+    Toast.makeText(this, "OnCreate Actividad 1", Toast.LENGTH_SHORT).show();
+        // Actividad creada.
 
     @Override
     protected void onStart() {
@@ -63,4 +83,5 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "OnDestroy Actividad 1", Toast.LENGTH_SHORT).show();
         // La actividad está terminando (debido a que el usuario la descarta por completo o a que se llama a finish()).
     }
+    */
 }

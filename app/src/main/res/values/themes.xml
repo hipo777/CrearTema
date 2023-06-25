@@ -25,6 +25,9 @@
     </style>
 
     <style name="BotonMaterialStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_marginTop">100dp</item>
         <item name="android:textColor">#FFFFFF</item>
         <item name="backgroundTint">@color/accent</item>
         <item name="cornerRadius">4dp</item>
