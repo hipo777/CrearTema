@@ -1,20 +1,36 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.CrearTema" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Estilos de componentes -->
+        <item name="materialButtonStyle">@style/Widget.MaterialComponents.Button</item>
+        <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.FilledBox</item>
+        <!-- Agrega otros estilos de componentes según tus necesidades -->
+    </style>
+    <style name="Tema1" parent="Theme.MaterialComponents.Light">
+        <!-- Colores -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorSecondary">@color/accent</item>
+        <!-- Otros atributos -->
+        <item name="android:windowBackground">@color/Background</item>
     </style>
 
-    <style name="Theme.CrearTema" parent="Base.Theme.CrearTema" >
-        <item name="android:textSize">20dp</item>
-        <item name="android:editTextColor">#673AB7</item>
-        <item name="android:background">#CDDC39</item>
+    <style name="Tema2" parent="Theme.Material3.DayNight.NoActionBar" >
+        <!-- Colores -->
+        <item name="colorPrimary">@color/primary2</item>
+        <item name="colorPrimaryVariant">@color/primary_dark2</item>
+        <item name="colorSecondary">@color/accent2</item>
+        <!-- Otros atributos -->
+        <item name="android:windowBackground">@color/background2</item>
     </style>
 
-    <style name="Theme.CrearTema2" parent="Base.Theme.CrearTema" >
-        <item name="android:textSize">20dp</item>
-        <item name="android:editTextColor">#F44336</item>
-        <item name="android:background">#009688</item>
+    <style name="BotonMaterialStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="backgroundTint">@color/accent</item>
+        <item name="cornerRadius">4dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
     </style>
 
 </resources>
