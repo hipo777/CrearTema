@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Crear Tema</string>
+    <string name="my_api_map">${my_api_map}</string>
 </resources>
