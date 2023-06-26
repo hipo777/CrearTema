@@ -28,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
         snackbar.setAction("Ok", new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Acción a realizar cuando se hace clic en la acción del SnackBar
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                startActivity(intent);
             }
         });
         snackbar.show();
