@@ -12,7 +12,8 @@
         <item name="colorPrimaryVariant">@color/primary_dark</item>
         <item name="colorSecondary">@color/accent</item>
         <!-- Otros atributos -->
-        <item name="android:windowBackground">@color/Background</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:windowBackground">@drawable/degradado</item>
     </style>
 
     <style name="Tema2" parent="Theme.Material3.DayNight.NoActionBar" >
@@ -21,7 +22,8 @@
         <item name="colorPrimaryVariant">@color/primary_dark2</item>
         <item name="colorSecondary">@color/accent2</item>
         <!-- Otros atributos -->
-        <item name="android:windowBackground">@color/background2</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:windowBackground">@drawable/degradado2</item>
     </style>
 
     <style name="BotonMaterialStyle" parent="Widget.MaterialComponents.Button">
