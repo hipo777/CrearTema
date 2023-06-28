@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
         Button boton2 = findViewById(R.id.btn2);
 
         boton1.setOnClickListener(v -> {
-            recreate();
             setTheme(R.style.Tema1);
+            recreate();
         });
 
         boton2.setOnClickListener(v -> {
