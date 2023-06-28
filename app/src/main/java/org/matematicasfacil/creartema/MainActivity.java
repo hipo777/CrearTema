@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ConstraintLayout constraint = findViewById(R.id.mainActivity);
 
-        Snackbar snackbar = Snackbar.make(constraint, "Bienvenido a Themes", Snackbar.LENGTH_LONG);
+        Snackbar snackbar = Snackbar.make(constraint, "Bienvenido. Ir a calendario", Snackbar.LENGTH_LONG);
         View snackbarView = snackbar.getView();//Obteniendo la vista.
         TextView textView = snackbarView.findViewById(com.google.android.material.R.id.snackbar_text);//Obteniendo Texto.
         textView.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);//Centrando texto.
@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         snackbar.show();
-
 
         Button boton1 = findViewById(R.id.btn1);
         Button boton2 = findViewById(R.id.btn2);
